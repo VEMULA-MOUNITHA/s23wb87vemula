@@ -8,3 +8,11 @@ block content
     div(class="row")
         each gadget,index in gadgets
             div(class="col-sm-3 bg-warning m-2 p-4" onclick=`buy(${index})`) #{gadget.gadget_type} - #{gadget.gadget_price} - #{gadget.gadget_version}
+    
+    
+    script.
+     
+      function buy(itemNo)
+      {
+        alert(`You purchased Item ${itemNo+1}`)
+      }

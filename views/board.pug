@@ -17,13 +17,15 @@ block content
       - for(let i=0; i<rows; i++) {
           tr#middle
             - for(let j=0; j<cols; j++) {
-                if i=j 
+                if i==j 
                     td= 1
                     td= " "
                 else if j>i
-                    td= j-i
+                    td= j-i+1
+                    td= " "
                 else  
                     td= 0
+                    td= " "
                
             -}
       - }
